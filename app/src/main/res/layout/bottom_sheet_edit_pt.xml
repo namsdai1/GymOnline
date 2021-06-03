@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_sheet"
+    tools:ignore="MissingDefaultResource">
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:id="@+id/tvNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT INFORMATION PT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/user" />
+        <TextView
+            android:id="@+id/tvErrorImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtTenPT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:hint="PT's Name"
+         />
+
+    <TextView
+        android:id="@+id/tvNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorAccent"
+        android:hint="Birthday(yyyy/MM/dd)"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtTien"
+        android:layout_width="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Rate"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtMoTa"
+        android:layout_width="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Note"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/khungedt"
+        android:layout_width="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

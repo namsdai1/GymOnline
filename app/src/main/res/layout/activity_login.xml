@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_Login"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/khunglogin"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:hint="Username"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khungedt"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khungedt"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+        <CheckBox
+            android:id="@+id/saveLoginCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Remember me?" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnDangKy"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:text="REGISTER "
+                android:textColor="@color/text"
+                android:background="@drawable/khungchange"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/btnDangNhap"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:text="LOG IN "
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text"
+                android:background="@drawable/khungchange"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/imgFB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/fb" />
+
+            <ImageView
+                android:id="@+id/imgGG"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/google"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Email: "
+            android:textColor="@color/text"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text"
+            android:text="Chuonghtps11594@gamil.com" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/call"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotline: "
+            android:textColor="@color/text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvCall"
+            android:textColor="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0933961814" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/imgLocation"
+            android:layout_width="16dp"
+            android:textColor="@color/text"
+            android:layout_height="20dp"
+            android:src="@drawable/location" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textColor="@color/text"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/text"
+        android:layout_height="wrap_content"
+        android:text="Toà nhà Innovation, lô 24, Công viên phần mềm Quang Trung, Quận 12, Thành phố Hồ Chí Minh"
+        android:gravity="center"/>
+
+</LinearLayout>

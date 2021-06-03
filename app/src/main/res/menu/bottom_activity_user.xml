@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/botHome"
+        android:title="HOME"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/botNews"
+        android:title="NEWS"
+        android:icon="@drawable/news"/>
+</menu>

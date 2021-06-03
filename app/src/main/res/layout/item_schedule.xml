@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tvDateCourse"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/tvHour"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Hour"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>

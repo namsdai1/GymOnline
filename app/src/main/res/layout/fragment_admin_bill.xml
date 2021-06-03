@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity_User_Course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroudtk"
+    android:paddingBottom="60dp"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATISTICAL"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the business type"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spStatistical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/khungregister"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+>
+            <Button
+                android:id="@+id/btn_date1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="FROM Date"
+                android:background="@drawable/khungchange"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:id="@+id/btn_date2"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="To Date"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/khungchange"
+                android:textColor="@color/text" />
+            <ImageView
+                android:id="@+id/imgRefresh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/refresh"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="The total money"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:text="FROM DATE - TO DATE"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvUserMyCourse"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            tools:listitem="@layout/item_user_my_course"
+            />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="CHART"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp">
+                </com.github.mikephil.charting.charts.PieChart>
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
